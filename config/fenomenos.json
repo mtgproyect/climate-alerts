@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "levels": {
+    "1": "Sin alerta",
+    "2": "Sin alerta",
+    "3": "Amarillo",
+    "4": "Naranja",
+    "5": "Rojo"
+  },
+  "phenomena": {
+    "37": "Lluvia",
+    "39": "Viento",
+    "41": "Tormenta",
+    "42": "Nevada",
+    "47": "Viento Zonda"
+  },
+  "note": "Los nombres corresponden a identificadores comprobados en el mapa público del SMN. Los IDs desconocidos se conservan sin inventar un nombre."
+}

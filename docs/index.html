@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071a33">
+  <meta
+    name="description"
+    content="Alertas meteorológicas oficiales del SMN por localidad."
+  >
+  <title>Alertas SMN · ClimateProyectar</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script
+    defer
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  ></script>
+  <script defer src="./assets/js/app.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <p class="eyebrow">ClimateProyectar · módulo independiente</p>
+        <h1>Alertas meteorológicas del SMN</h1>
+        <p class="header-copy">
+          Alertas oficiales vinculadas con las 10.601 localidades
+          del catálogo nacional.
+        </p>
+      </div>
+
+      <a
+        class="official-link"
+        href="https://www.smn.gob.ar/alertas"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ver alertas oficiales
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary-grid" aria-label="Resumen nacional">
+      <article class="metric-card">
+        <span>Estado</span>
+        <strong id="metric-status">Cargando…</strong>
+      </article>
+      <article class="metric-card">
+        <span>Alertas activas</span>
+        <strong id="metric-alerts">—</strong>
+      </article>
+      <article class="metric-card">
+        <span>Áreas afectadas</span>
+        <strong id="metric-areas">—</strong>
+      </article>
+      <article class="metric-card">
+        <span>Nivel máximo</span>
+        <strong id="metric-level">—</strong>
+      </article>
+    </section>
+
+    <section class="panel locality-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Consulta por localidad</p>
+          <h2>¿Hay alertas donde estás?</h2>
+        </div>
+      </div>
+
+      <label for="locality-search">Buscar localidad</label>
+      <div class="search-wrap">
+        <input
+          id="locality-search"
+          type="search"
+          autocomplete="off"
+          placeholder="Ej.: Monte Grande, Córdoba, Ushuaia…"
+          aria-autocomplete="list"
+          aria-controls="locality-suggestions"
+        >
+        <div
+          id="locality-suggestions"
+          class="suggestions"
+          role="listbox"
+          hidden
+        ></div>
+      </div>
+
+      <div id="locality-result" class="locality-result">
+        Elegí una localidad para consultar sus áreas de alerta.
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading controls-heading">
+        <div>
+          <p class="eyebrow">Cobertura nacional</p>
+          <h2>Mapa de alertas</h2>
+        </div>
+
+        <div class="filters">
+          <label>
+            Fecha
+            <select id="date-filter">
+              <option value="">Todas</option>
+            </select>
+          </label>
+
+          <label>
+            Fenómeno
+            <select id="event-filter">
+              <option value="">Todos</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div id="alert-map" class="map"></div>
+      <p id="map-status" class="status-text">
+        Preparando mapa…
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Detalle oficial</p>
+          <h2>Alertas vigentes</h2>
+        </div>
+      </div>
+
+      <div id="alerts-list" class="alerts-list">
+        Cargando alertas…
+      </div>
+    </section>
+
+    <footer>
+      <p id="publication-time"></p>
+      <p>
+        Esta visualización procesa información pública del Servicio
+        Meteorológico Nacional. Ante situaciones críticas, verificá
+        siempre los canales oficiales del SMN.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

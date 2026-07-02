@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "last_success_at": null,
+  "smn_updated_at": null,
+  "status": "pending",
+  "source": "Servicio Meteorológico Nacional",
+  "source_endpoint": "/v1/warning/alert/area?mode=alert&compact=true",
+  "area_records_received": 0,
+  "active_count": 0,
+  "affected_area_count": 0,
+  "max_level": 1,
+  "levels": {
+    "1": "Sin alerta",
+    "2": "Sin alerta",
+    "3": "Amarillo",
+    "4": "Naranja",
+    "5": "Rojo"
+  },
+  "phenomena": {
+    "37": "Lluvia",
+    "39": "Viento",
+    "41": "Tormenta",
+    "42": "Nevada",
+    "47": "Viento Zonda"
+  },
+  "alerts": []
+}

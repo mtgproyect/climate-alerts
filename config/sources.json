@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "token_pages": [
+    "https://ws2.smn.gob.ar/pronostico",
+    "https://ws2.smn.gob.ar/alertas",
+    "https://www.smn.gob.ar/alertas"
+  ],
+  "alerts_endpoint": "https://ws1.smn.gob.ar/v1/warning/alert/area?mode=alert&compact=true",
+  "alert_areas_bootstrap_urls": [
+    "https://wilowsnets.github.io/clima-argentina/data/areas_alerta.geojson",
+    "https://raw.githubusercontent.com/wilowsnets/clima-argentina/main/docs/data/areas_alerta.geojson"
+  ],
+  "official_alerts_page": "https://www.smn.gob.ar/alertas",
+  "expected_minimum_area_count": 150,
+  "proximity_threshold_degrees": 0.005
+}

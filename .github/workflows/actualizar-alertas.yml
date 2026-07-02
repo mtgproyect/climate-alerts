@@ -1,0 +1,105 @@
+name: Actualizar alertas SMN
+
+run-name: Alertas SMN · disparo externo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: climate-alerts
+  cancel-in-progress: true
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+
+      - name: Sincronizar polígonos de alerta
+        run: python scripts/sincronizar_areas_alerta.py
+
+      - name: Vincular 10.601 localidades
+        run: python scripts/generar_mapa_localidades.py
+
+      - name: Consultar alertas oficiales
+        run: |
+          python scripts/actualizar_alertas_smn.py \
+            --http-attempts 4 \
+            --retry-base-seconds 2.0 \
+            --timeout-seconds 45
+
+      - name: Validar publicación
+        run: |
+          python -m json.tool docs/alertas.json > /dev/null
+          python -m json.tool docs/manifiesto.json > /dev/null
+          python -m json.tool \
+            docs/localidades_alerta.min.json > /dev/null
+          python -m json.tool \
+            docs/areas_alerta.geojson > /dev/null
+          python -m unittest discover -s tests -v
+          node --check docs/assets/js/app.js
+
+      - name: Guardar actualización
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            data/areas_alerta.geojson \
+            data/diagnostico_localidades_alerta.json \
+            data/mapeo_metadata.json \
+            docs/alertas.json \
+            docs/manifiesto.json \
+            docs/areas_alerta.geojson \
+            docs/localidades_alerta.min.json
+
+          if git diff --cached --quiet; then
+            echo "No hay cambios de alertas para publicar."
+            exit 0
+          fi
+
+          git commit -m "Actualizar alertas meteorológicas SMN"
+
+          for intento in 1 2 3; do
+            echo "Intento de publicación ${intento}/3"
+            git fetch origin main
+
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "Conflicto al integrar cambios remotos."
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              echo "Alertas publicadas correctamente."
+              exit 0
+            fi
+
+            sleep 5
+          done
+
+          echo "No fue posible publicar después de 3 intentos."
+          exit 1
