@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-02T03:55:20-03:00",
+  "localities_sha256": "2cb327ff0863d70174d7b93c2900c129ca30ed29371884380be1d0d2c832c1ce",
+  "areas_sha256": "280738607c58ea259bea9e8d6eeb6530b52997d843f21beb357d7491ebf731b8",
+  "locality_count": 10601,
+  "area_count": 168
+}

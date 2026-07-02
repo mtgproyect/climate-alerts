@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": null,
+  "generated_at": "2026-07-02T03:55:21-03:00",
   "enabled": true,
-  "status": "pending",
+  "status": "con_alertas",
   "source": {
     "name": "Servicio Meteorológico Nacional",
     "official_page": "https://www.smn.gob.ar/alertas",
     "endpoint": "https://ws1.smn.gob.ar/v1/warning/alert/area?mode=alert&compact=true"
   },
   "counts": {
-    "alert_areas": 0,
-    "mapped_localities": 0,
+    "alert_areas": 168,
+    "mapped_localities": 10561,
     "total_localities": 10601,
-    "active_alerts": 0,
-    "affected_areas": 0,
-    "maximum_level": 1
+    "active_alerts": 30,
+    "affected_areas": 15,
+    "maximum_level": 3
   },
   "files": {
     "alerts": "alertas.json",
