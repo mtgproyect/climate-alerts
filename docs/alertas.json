@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-03T18:58:16-03:00",
-  "last_success_at": "2026-07-03T18:58:16-03:00",
+  "generated_at": "2026-07-04T00:58:12-03:00",
+  "last_success_at": "2026-07-04T00:58:12-03:00",
   "smn_updated_at": "2026-07-03T17:49:40-03:00",
   "status": "con_alertas",
   "source": "Servicio Meteorológico Nacional",
   "source_endpoint": "/v1/warning/alert/area?mode=alert&compact=true",
   "area_records_received": 171,
-  "active_count": 27,
+  "active_count": 24,
   "affected_area_count": 24,
   "max_level": 3,
   "levels": {
@@ -25,54 +25,6 @@
     "47": "Viento Zonda"
   },
   "alerts": [
-    {
-      "area_id": 3335,
-      "date": "2026-07-03",
-      "updated": "2026-07-03T17:49:40-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3384,
-      "date": "2026-07-03",
-      "updated": "2026-07-03T17:49:40-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3388,
-      "date": "2026-07-03",
-      "updated": "2026-07-03T17:49:40-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
     {
       "area_id": 715,
       "date": "2026-07-04",
