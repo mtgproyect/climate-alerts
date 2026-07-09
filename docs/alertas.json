@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-09T00:58:17-03:00",
-  "last_success_at": "2026-07-09T00:58:17-03:00",
+  "generated_at": "2026-07-09T06:58:22-03:00",
+  "last_success_at": "2026-07-09T06:58:22-03:00",
   "smn_updated_at": "2026-07-08T17:29:29-03:00",
   "status": "con_alertas",
   "source": "Servicio Meteorológico Nacional",
   "source_endpoint": "/v1/warning/alert/area?mode=alert&compact=true",
   "area_records_received": 171,
-  "active_count": 28,
+  "active_count": 20,
   "affected_area_count": 18,
   "max_level": 4,
   "levels": {
@@ -26,114 +26,12 @@
   },
   "alerts": [
     {
-      "area_id": 826,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 828,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 832,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 833,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 37,
-          "name": "Lluvia",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 836,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 37,
-          "name": "Lluvia",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 837,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
       "area_id": 3334,
       "date": "2026-07-09",
       "updated": "2026-07-08T17:29:29-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
         {
           "id": 42,
           "name": "Nevada",
@@ -151,46 +49,8 @@
       "level_name": "Amarillo",
       "events": [
         {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
-        {
           "id": 42,
           "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3338,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3341,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 39,
-          "name": "Viento",
           "level": 3,
           "level_name": "Amarillo"
         }
