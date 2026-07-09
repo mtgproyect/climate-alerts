@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-09T06:58:22-03:00",
-  "last_success_at": "2026-07-09T06:58:22-03:00",
-  "smn_updated_at": "2026-07-08T17:29:29-03:00",
+  "generated_at": "2026-07-09T07:58:21-03:00",
+  "last_success_at": "2026-07-09T07:58:21-03:00",
+  "smn_updated_at": "2026-07-09T07:37:53-03:00",
   "status": "con_alertas",
   "source": "Servicio Meteorológico Nacional",
   "source_endpoint": "/v1/warning/alert/area?mode=alert&compact=true",
   "area_records_received": 171,
-  "active_count": 20,
+  "active_count": 18,
   "affected_area_count": 18,
   "max_level": 4,
   "levels": {
@@ -26,41 +26,9 @@
   },
   "alerts": [
     {
-      "area_id": 3334,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3337,
-      "date": "2026-07-09",
-      "updated": "2026-07-08T17:29:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
       "area_id": 827,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 4,
       "level_name": "Naranja",
       "events": [
@@ -76,7 +44,7 @@
     {
       "area_id": 3334,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 4,
       "level_name": "Naranja",
       "events": [
@@ -92,7 +60,7 @@
     {
       "area_id": 826,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -108,7 +76,7 @@
     {
       "area_id": 828,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -124,7 +92,7 @@
     {
       "area_id": 829,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -140,7 +108,7 @@
     {
       "area_id": 830,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -156,7 +124,7 @@
     {
       "area_id": 831,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -172,7 +140,7 @@
     {
       "area_id": 832,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -188,7 +156,7 @@
     {
       "area_id": 833,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -204,7 +172,7 @@
     {
       "area_id": 835,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -220,7 +188,7 @@
     {
       "area_id": 836,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -236,7 +204,7 @@
     {
       "area_id": 837,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -252,7 +220,7 @@
     {
       "area_id": 838,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -268,7 +236,7 @@
     {
       "area_id": 3337,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -290,7 +258,7 @@
     {
       "area_id": 3338,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -312,7 +280,7 @@
     {
       "area_id": 3340,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -328,7 +296,7 @@
     {
       "area_id": 3341,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
@@ -344,7 +312,7 @@
     {
       "area_id": 3384,
       "date": "2026-07-10",
-      "updated": "2026-07-08T17:29:29-03:00",
+      "updated": "2026-07-09T07:37:53-03:00",
       "level": 3,
       "level_name": "Amarillo",
       "events": [
