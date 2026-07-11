@@ -61,7 +61,7 @@ jobs:
           python -m unittest discover -s tests -v
           node --check docs/assets/js/app.js
 
-      - name: Guardar actualización
+      - name: Guardar actualización en GitHub
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -78,7 +78,7 @@ jobs:
             docs/localidades_alerta.min.json
 
           if git diff --cached --quiet; then
-            echo "No hay cambios de alertas para guardar."
+            echo "No hay cambios de alertas para guardar en GitHub."
             exit 0
           fi
 
@@ -96,7 +96,7 @@ jobs:
             fi
 
             if git push origin HEAD:main; then
-              echo "Alertas meteorológicas actualizadas correctamente."
+              echo "Alertas meteorológicas actualizadas correctamente en GitHub."
               exit 0
             fi
 
@@ -105,3 +105,38 @@ jobs:
 
           echo "No fue posible guardar los cambios después de 3 intentos."
           exit 1
+
+      - name: Instalar AWS CLI para R2
+        run: |
+          python -m pip install --upgrade pip
+          pip install awscli
+
+      - name: Subir alertas a Cloudflare R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          AWS_EC2_METADATA_DISABLED: true
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+        run: |
+          aws s3 cp docs/manifiesto.json s3://weathervar-data/alerts/manifiesto.json \
+            --endpoint-url "$R2_ENDPOINT" \
+            --content-type "application/json" \
+            --cache-control "public, max-age=300"
+
+          aws s3 cp docs/alertas.json s3://weathervar-data/alerts/alertas.json \
+            --endpoint-url "$R2_ENDPOINT" \
+            --content-type "application/json" \
+            --cache-control "public, max-age=300"
+
+          aws s3 cp docs/localidades_alerta.min.json s3://weathervar-data/alerts/localidades_alerta.min.json \
+            --endpoint-url "$R2_ENDPOINT" \
+            --content-type "application/json" \
+            --cache-control "public, max-age=300"
+
+          aws s3 cp docs/areas_alerta.geojson s3://weathervar-data/alerts/areas_alerta.geojson \
+            --endpoint-url "$R2_ENDPOINT" \
+            --content-type "application/geo+json" \
+            --cache-control "public, max-age=300"
+
+          echo "Alertas subidas correctamente a Cloudflare R2."
