@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-21T06:58:14-03:00",
-  "last_success_at": "2026-07-21T06:58:14-03:00",
+  "generated_at": "2026-07-21T12:58:18-03:00",
+  "last_success_at": "2026-07-21T12:58:18-03:00",
   "smn_updated_at": "2026-07-21T06:00:29-03:00",
   "status": "con_alertas",
   "source": "Servicio Meteorológico Nacional",
   "source_endpoint": "/v1/warning/alert/area?mode=alert&compact=true",
   "area_records_received": 171,
-  "active_count": 56,
-  "affected_area_count": 38,
+  "active_count": 52,
+  "affected_area_count": 34,
   "max_level": 4,
   "levels": {
     "1": "Sin alerta",
@@ -53,12 +53,6 @@
           "name": "Viento",
           "level": 4,
           "level_name": "Naranja"
-        },
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
         }
       ],
       "reports": []
@@ -252,38 +246,6 @@
       "reports": []
     },
     {
-      "area_id": 792,
-      "date": "2026-07-21",
-      "updated": "2026-07-21T06:00:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 41,
-          "name": "Tormenta",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 817,
-      "date": "2026-07-21",
-      "updated": "2026-07-21T06:00:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 41,
-          "name": "Tormenta",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
       "area_id": 826,
       "date": "2026-07-21",
       "updated": "2026-07-21T06:00:29-03:00",
@@ -375,12 +337,6 @@
           "name": "Viento",
           "level": 3,
           "level_name": "Amarillo"
-        },
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
         }
       ],
       "reports": []
@@ -395,22 +351,6 @@
         {
           "id": 47,
           "name": "Viento Zonda",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3350,
-      "date": "2026-07-21",
-      "updated": "2026-07-21T06:00:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
           "level": 3,
           "level_name": "Amarillo"
         }
@@ -531,22 +471,6 @@
     },
     {
       "area_id": 3390,
-      "date": "2026-07-21",
-      "updated": "2026-07-21T06:00:29-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 41,
-          "name": "Tormenta",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3400,
       "date": "2026-07-21",
       "updated": "2026-07-21T06:00:29-03:00",
       "level": 3,
