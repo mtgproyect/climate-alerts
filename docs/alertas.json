@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-26T17:58:20-03:00",
-  "last_success_at": "2026-07-26T17:58:20-03:00",
+  "generated_at": "2026-07-26T18:58:16-03:00",
+  "last_success_at": "2026-07-26T18:58:16-03:00",
   "smn_updated_at": "2026-07-26T17:49:12-03:00",
   "status": "con_alertas",
   "source": "Servicio Meteorológico Nacional",
@@ -33,18 +33,6 @@
       "level_name": "Naranja",
       "events": [
         {
-          "id": 37,
-          "name": "Lluvia",
-          "level": 4,
-          "level_name": "Naranja"
-        },
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
-        {
           "id": 42,
           "name": "Nevada",
           "level": 4,
@@ -61,18 +49,6 @@
       "level_name": "Naranja",
       "events": [
         {
-          "id": 37,
-          "name": "Lluvia",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
-        {
           "id": 42,
           "name": "Nevada",
           "level": 4,
@@ -88,12 +64,6 @@
       "level": 4,
       "level_name": "Naranja",
       "events": [
-        {
-          "id": 37,
-          "name": "Lluvia",
-          "level": 4,
-          "level_name": "Naranja"
-        },
         {
           "id": 42,
           "name": "Nevada",
@@ -191,12 +161,6 @@
       "level_name": "Amarillo",
       "events": [
         {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
-        {
           "id": 42,
           "name": "Nevada",
           "level": 3,
@@ -213,18 +177,6 @@
       "level_name": "Amarillo",
       "events": [
         {
-          "id": 37,
-          "name": "Lluvia",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
-        {
           "id": 42,
           "name": "Nevada",
           "level": 3,
@@ -240,12 +192,6 @@
       "level": 3,
       "level_name": "Amarillo",
       "events": [
-        {
-          "id": 37,
-          "name": "Lluvia",
-          "level": 3,
-          "level_name": "Amarillo"
-        },
         {
           "id": 42,
           "name": "Nevada",
