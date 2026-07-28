@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-27T17:58:26-03:00",
-  "last_success_at": "2026-07-27T17:58:26-03:00",
+  "generated_at": "2026-07-28T00:58:16-03:00",
+  "last_success_at": "2026-07-28T00:58:16-03:00",
   "smn_updated_at": "2026-07-27T17:49:45-03:00",
   "status": "con_alertas",
   "source": "Servicio Meteorológico Nacional",
   "source_endpoint": "/v1/warning/alert/area?mode=alert&compact=true",
   "area_records_received": 171,
-  "active_count": 57,
+  "active_count": 51,
   "affected_area_count": 42,
   "max_level": 4,
   "levels": {
@@ -25,102 +25,6 @@
     "47": "Viento Zonda"
   },
   "alerts": [
-    {
-      "area_id": 3334,
-      "date": "2026-07-27",
-      "updated": "2026-07-27T17:49:45-03:00",
-      "level": 4,
-      "level_name": "Naranja",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 4,
-          "level_name": "Naranja"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3337,
-      "date": "2026-07-27",
-      "updated": "2026-07-27T17:49:45-03:00",
-      "level": 4,
-      "level_name": "Naranja",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 4,
-          "level_name": "Naranja"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 827,
-      "date": "2026-07-27",
-      "updated": "2026-07-27T17:49:45-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3338,
-      "date": "2026-07-27",
-      "updated": "2026-07-27T17:49:45-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3340,
-      "date": "2026-07-27",
-      "updated": "2026-07-27T17:49:45-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3341,
-      "date": "2026-07-27",
-      "updated": "2026-07-27T17:49:45-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 42,
-          "name": "Nevada",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
     {
       "area_id": 3334,
       "date": "2026-07-28",
