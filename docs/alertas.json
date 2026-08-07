@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-07T17:58:32-03:00",
-  "last_success_at": "2026-08-07T17:58:32-03:00",
+  "generated_at": "2026-08-07T18:58:16-03:00",
+  "last_success_at": "2026-08-07T18:58:16-03:00",
   "smn_updated_at": "2026-08-07T17:13:38-03:00",
   "status": "con_alertas",
   "source": "Servicio Meteorológico Nacional",
   "source_endpoint": "/v1/warning/alert/area?mode=alert&compact=true",
   "area_records_received": 171,
-  "active_count": 99,
-  "affected_area_count": 60,
+  "active_count": 96,
+  "affected_area_count": 59,
   "max_level": 3,
   "levels": {
     "1": "Sin alerta",
@@ -192,22 +192,6 @@
       "reports": []
     },
     {
-      "area_id": 3336,
-      "date": "2026-08-07",
-      "updated": "2026-08-07T17:13:38-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
       "area_id": 3337,
       "date": "2026-08-07",
       "updated": "2026-08-07T17:13:38-03:00",
@@ -310,22 +294,6 @@
       "reports": []
     },
     {
-      "area_id": 3347,
-      "date": "2026-08-07",
-      "updated": "2026-08-07T17:13:38-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
       "area_id": 3350,
       "date": "2026-08-07",
       "updated": "2026-08-07T17:13:38-03:00",
@@ -407,22 +375,6 @@
     },
     {
       "area_id": 3365,
-      "date": "2026-08-07",
-      "updated": "2026-08-07T17:13:38-03:00",
-      "level": 3,
-      "level_name": "Amarillo",
-      "events": [
-        {
-          "id": 39,
-          "name": "Viento",
-          "level": 3,
-          "level_name": "Amarillo"
-        }
-      ],
-      "reports": []
-    },
-    {
-      "area_id": 3369,
       "date": "2026-08-07",
       "updated": "2026-08-07T17:13:38-03:00",
       "level": 3,
