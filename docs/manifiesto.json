@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-07T18:58:16-03:00",
+  "generated_at": "2026-08-08T00:58:17-03:00",
   "enabled": true,
   "status": "con_alertas",
   "source": {
@@ -12,8 +12,8 @@
     "alert_areas": 168,
     "mapped_localities": 10561,
     "total_localities": 10601,
-    "active_alerts": 96,
-    "affected_areas": 59,
+    "active_alerts": 66,
+    "affected_areas": 56,
     "maximum_level": 3
   },
   "files": {
